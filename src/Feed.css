@@ -1,0 +1,39 @@
+.buttons {
+    display: flex;
+    z-index: 3;
+    float: right;
+    margin: 30px;
+}
+
+.buttons h2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.search {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    padding: 0px 20px;
+}
+
+.search input {
+    height: 100%;
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+}
