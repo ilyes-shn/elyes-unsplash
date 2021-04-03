@@ -72,7 +72,7 @@ const Feed = () => {
 
   console.log(keyword);
   return (
-    <div style={{ minHeight: "60vh" }}>
+    <div style={{ minHeight: "60vh", scrollBehavior: 'smooth' }}>
       <div
         className="search"
         style={{
