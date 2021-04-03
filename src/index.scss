@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scrollbar-width: 6px;
   scrollbar-color: rgb(65, 65, 65) rgb(17, 17, 17);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,10 +15,6 @@ body {
   width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 
 ::-webkit-scrollbar {
   width: 8px;
