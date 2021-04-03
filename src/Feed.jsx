@@ -78,6 +78,7 @@ const Feed = () => {
         style={{
           backgroundColor: open.dark ? "rgb(15, 15, 15)" : "white",
           color: open.dark ? "white" : "black",
+          transition: "0.5s ease",
         }}
       >
         <input
@@ -123,6 +124,7 @@ const Feed = () => {
             style={{
               backgroundColor: open.dark ? "rgb(15,15,15)" : "white",
               color: open.dark ? "white" : "black",
+              transition: "0.5s ease",
             }}
           >
             <ArrowBackIosOutlinedIcon style={{ opacity: 0.8 }} />
@@ -132,6 +134,7 @@ const Feed = () => {
             style={{
               backgroundColor: open.dark ? "rgb(15,15,15)" : "white",
               color: open.dark ? "white" : "black",
+              transition: "0.5s ease",
             }}
           >
             <ArrowForwardIosOutlinedIcon style={{ opacity: 0.8 }} />
