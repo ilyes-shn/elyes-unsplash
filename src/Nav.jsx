@@ -38,7 +38,7 @@ const Nav = () => {
             color: dark.dark ? "white" : "black",
           }}
         />
-        <Switch onChange={(e) => setChecked(e.target.checked)} />
+        <Switch onChange={(e) => setChecked(e.target.checked)} checked={dark.dark}/>
         <NightsStayOutlinedIcon
           style={{
             fontSize: "20px",
