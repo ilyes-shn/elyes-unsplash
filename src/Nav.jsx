@@ -7,15 +7,27 @@ import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 
 
 const Nav = () => {
-  const [checked, setChecked] = useState(false);
+  let mode = localStorage.getItem('mode') === 'dark' ? true : false
+
+  const [checked, setChecked] = useState(mode);
   const [dark, dispatch] = useData();
  
 
   useEffect(() => {
-    dispatch({
-      type: "SET_DARK",
-      data: checked,
-    });
+    if (checked) {
+      localStorage.setItem('mode', 'dark')
+      dispatch({
+        type: "SET_DARK",
+        data: checked,
+      });
+    } else {
+      localStorage.setItem('mode', 'light')
+      dispatch({
+        type: "SET_DARK",
+        data: checked,
+      });
+    }
+    
   }, [checked]);
   return (
     <div
@@ -37,7 +49,7 @@ const Nav = () => {
             color: dark.dark ? "white" : "black",
           }}
         />
-        <Switch onChange={(e) => setChecked(e.target.checked)} />
+        <Switch onChange={(e) => setChecked(e.target.checked)} defaultChecked={checked}/>
         <NightsStayOutlinedIcon
           style={{
             fontSize: "20px",
