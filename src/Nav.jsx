@@ -16,13 +16,13 @@ const Nav = () => {
       localStorage.setItem('mode', 'dark')
       dispatch({
         type: 'SET_DARK',
-        action: checked
+        action: true
       })
     } else {
       localStorage.setItem('mode', 'light')
       dispatch({
         type: 'SET_DARK',
-        action: checked
+        action: false
       })
     }
   }, [checked]);
