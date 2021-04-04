@@ -43,7 +43,7 @@ const Modal = () => {
       >
         {data.image.alt}
       </motion.h2>
-      <h5>Photo by <a style={{ color: data.dark ? "white" : "black" }} href={data.image.userURL + '?utm_source=elyes-photos&utm_medium=referral'}>{data.image.userName}</a> on <a style={{ color: data.dark ? "white" : "black" }} href="https://www.unsplash.com/">Unsplash</a></h5>
+      <h5 style={{ color: data.dark ? "white" : "black" }}>Photo by <a style={{ color: data.dark ? "white" : "black" }} href={data.image.userURL + '?utm_source=elyes-photos&utm_medium=referral'}>{data.image.userName}</a> on <a style={{ color: data.dark ? "white" : "black" }} href="https://www.unsplash.com/">Unsplash</a></h5>
       </div>
       <div>
         <HighlightOffOutlinedIcon
