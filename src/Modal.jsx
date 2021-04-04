@@ -17,6 +17,7 @@ const Modal = () => {
     });
   }
 
+  console.log(data.image)
   return (
     <div
       className="modal"
@@ -33,6 +34,7 @@ const Modal = () => {
         initial={{ y: 100 }}
         animate={{ y: 0 }}
       />
+      <div className='user'>
       <motion.h2
         style={{ color: data.dark ? "white" : "black" }}
         initial={{ x: 100 }}
@@ -41,6 +43,8 @@ const Modal = () => {
       >
         {data.image.alt}
       </motion.h2>
+      <h5>Photo by <a style={{ color: data.dark ? "white" : "black" }} href={data.image.userURL + '?utm_source=elyes-photos&utm_medium=referral'}>{data.image.userName}</a> on <a style={{ color: data.dark ? "white" : "black" }} href="https://www.unsplash.com/">Unsplash</a></h5>
+      </div>
       <div>
         <HighlightOffOutlinedIcon
           onClick={close}
@@ -53,6 +57,7 @@ const Modal = () => {
             opacity: "0.7",
             cursor: "pointer",
           }}
+          className='closeBtn'
         />
       </div>
     </div>

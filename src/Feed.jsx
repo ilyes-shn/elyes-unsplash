@@ -49,11 +49,14 @@ const Feed = () => {
   }
 
   function openModal(image) {
+    
     dispatch({
       type: "SET_DATA",
       payload: {
         url: image.urls.regular,
         alt: image.alt_description,
+        userName: image.user.name,
+        userURL: image.user.links.html
       },
     });
 

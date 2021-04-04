@@ -14,8 +14,30 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
 }
 
-.modal h2 {
-    width: 200px;
+.modal .user {
+    width: 250px;
     margin-left: 20px;
     line-height: 35px;
 }
+
+@media only screen and (max-width: 600px) {
+    .modal {
+        flex-direction: column;
+        padding-top: 110px;
+        padding-bottom: 30px;
+    }
+
+    .modal img {
+        width: 80%;
+        height: auto;
+    }
+
+    .closeBtn {
+        transform: translate(50px,-15px);
+    }
+
+    .modal .user {
+        margin-left: 0px;
+    }
+}
+    
