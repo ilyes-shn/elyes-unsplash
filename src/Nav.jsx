@@ -14,8 +14,16 @@ const Nav = () => {
   useEffect(() => {
     if (checked) {
       localStorage.setItem('mode', 'dark')
+      dispatch({
+        type: 'SET_DARK',
+        action: checked
+      })
     } else {
       localStorage.setItem('mode', 'light')
+      dispatch({
+        type: 'SET_DARK',
+        action: checked
+      })
     }
   }, [checked]);
   return (
