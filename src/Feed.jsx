@@ -19,7 +19,6 @@ const Feed = () => {
     if (keyword !== "") {
       async function dataSearch() {
         const data = await search(page, keyword);
-        console.log(data.results);
         setData(data.results);
       }
       dataSearch();
@@ -72,7 +71,7 @@ const Feed = () => {
 
   console.log(keyword);
   return (
-    <div style={{ minHeight: "60vh", scrollBehavior: 'smooth' }}>
+    <div style={{ minHeight: "60vh", scrollBehavior: "smooth" }}>
       <div
         className="search"
         style={{
