@@ -25,7 +25,6 @@ const Feed = () => {
     } else {
       async function data() {
         const data = await global(page);
-        console.log(data);
         setData(data);
       }
       data();
@@ -69,7 +68,7 @@ const Feed = () => {
     });
   }
 
-  console.log(keyword);
+  
   return (
     <div style={{ minHeight: "60vh", scrollBehavior: "smooth" }}>
       <div
