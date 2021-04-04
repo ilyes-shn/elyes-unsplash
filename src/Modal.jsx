@@ -27,6 +27,7 @@ const Modal = () => {
       }}
     >
       <motion.img
+        drag
         src={data.image.url}
         alt={data.image.alt}
         initial={{ y: 100 }}
