@@ -2,15 +2,6 @@ import { createContext, useContext, useReducer } from "react";
 
 const Context = createContext();
 
-const mode = localStorage.getItem("mode");
-
-let dark;
-
-if (mode === "dark") {
-  dark = true;
-} else {
-  dark = false;
-}
 
 const init = {
   open: false,
@@ -19,7 +10,7 @@ const init = {
     alt: null,
   },
   blur: "none",
-  dark: dark,
+  dark: localStorage.getItem('dark') === 'dark' ? true : false ,
 };
 
 const Reducer = (state, action) => {
