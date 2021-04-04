@@ -12,10 +12,11 @@ const Nav = () => {
  
 
   useEffect(() => {
-    dispatch({
-      type: "SET_DARK",
-      data: checked,
-    });
+    if (checked) {
+      localStorage.setItem('mode', 'dark')
+    } else {
+      localStorage.setItem('mode', 'light')
+    }
   }, [checked]);
   return (
     <div

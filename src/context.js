@@ -2,6 +2,16 @@ import { createContext, useContext, useReducer } from "react";
 
 const Context = createContext();
 
+const mode = localStorage.getItem("mode");
+
+let dark;
+
+if (mode === "dark") {
+  dark = true;
+} else {
+  dark = false;
+}
+
 const init = {
   open: false,
   image: {
@@ -9,7 +19,7 @@ const init = {
     alt: null,
   },
   blur: "none",
-  dark: false,
+  dark: dark,
 };
 
 const Reducer = (state, action) => {
