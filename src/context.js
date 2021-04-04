@@ -10,7 +10,7 @@ const init = {
     alt: null,
   },
   blur: "none",
-  dark: localStorage.getItem('dark') === 'dark' ? true : false ,
+  dark: false ,
 };
 
 const Reducer = (state, action) => {

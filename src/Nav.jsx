@@ -12,19 +12,10 @@ const Nav = () => {
  
 
   useEffect(() => {
-    if (checked) {
-      localStorage.setItem('mode', 'dark')
-      dispatch({
-        type: 'SET_DARK',
-        action: true
-      })
-    } else {
-      localStorage.setItem('mode', 'light')
-      dispatch({
-        type: 'SET_DARK',
-        action: false
-      })
-    }
+    dispatch({
+      type: "SET_DARK",
+      data: checked,
+    });
   }, [checked]);
   return (
     <div
@@ -46,7 +37,7 @@ const Nav = () => {
             color: dark.dark ? "white" : "black",
           }}
         />
-        <Switch onChange={(e) => setChecked(e.target.checked)} defaultChecked={dark.dark}/>
+        <Switch onChange={(e) => setChecked(e.target.checked)} />
         <NightsStayOutlinedIcon
           style={{
             fontSize: "20px",
