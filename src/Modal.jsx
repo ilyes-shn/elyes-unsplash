@@ -17,7 +17,7 @@ const Modal = () => {
     });
   }
 
-  console.log(data.image)
+  
   return (
     <div
       className="modal"
@@ -29,6 +29,7 @@ const Modal = () => {
     >
       <motion.img
         drag
+        dragConstraints={{left: 0, top: 0, right: 0, bottom: 0}}
         src={data.image.url}
         alt={data.image.alt}
         initial={{ y: 100 }}

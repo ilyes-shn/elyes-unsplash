@@ -102,7 +102,7 @@ const Feed = () => {
                 key={Math.random()}
                 onClick={() => openModal(image)}
               >
-                <img src={image.urls.regular} alt={image.alt_description} />
+                <img src={image.urls.small} alt={image.alt_description} />
               </GridListTile>
             );
           })}
