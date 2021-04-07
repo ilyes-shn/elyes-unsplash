@@ -88,6 +88,7 @@ const Feed = () => {
           onChange={(e) => setValue(e.target.value)}
           placeholder="What are you thinking about !!"
           style={{ color: open.dark ? "white" : "black" }}
+          onKeyDown={(e) => e.key === 'Enter' ? setKeyword(value) : null}
         />
         <SearchOutlinedIcon
           onClick={() => setKeyword(value)}
