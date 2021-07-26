@@ -86,7 +86,7 @@ const Feed = () => {
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          placeholder="What are you thinking about !!"
+          placeholder="Search..."
           style={{ color: open.dark ? "white" : "black" }}
           onKeyDown={(e) => e.key === 'Enter' ? setKeyword(value) : null}
         />
