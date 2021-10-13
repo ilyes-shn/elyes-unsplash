@@ -33,7 +33,7 @@ const Nav = () => {
     <div
       className="nav"
       style={{
-        backgroundColor: dark.dark ? "rgb(15, 15, 15)" : "white",
+        backgroundColor: dark.dark ? "rgba(15, 15, 15, 0.6)" : "rgba(255, 255, 255, 0.6)",
         color: dark.dark ? "white" : "black",
       }}
     >
