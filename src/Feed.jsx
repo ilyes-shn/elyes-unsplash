@@ -40,12 +40,14 @@ const Feed = () => {
       num = 1;
       setPage(1);
     }
+    window.scrollTo(0,0)
   }
 
   function plus() {
     let num = page;
     num += 1;
     setPage(num);
+    window.scrollTo(0,0)
   }
 
   function openModal(image) {
